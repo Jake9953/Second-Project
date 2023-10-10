@@ -1,3 +1,31 @@
 {
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "adipisicing",
+    "aliquid",
+    "amet",
+    "aspernatur",
+    "autem",
+    "Autem",
+    "Backroads",
+    "consectetur",
+    "Ducimus",
+    "eaque",
+    "eligendi",
+    "Eligendi",
+    "elit",
+    "eveniet",
+    "nobis",
+    "obcaecati",
+    "Officia",
+    "optio",
+    "placeat",
+    "possimus",
+    "repellat",
+    "Repudiandae",
+    "sequi",
+    "soluta",
+    "tuors",
+    "voluptas"
+  ]
 }
