@@ -401,7 +401,7 @@ right: 0;
 bottom: 0;
 background: var(--clr-primary-8);
 margin-bottom: 0;
-color: var(--clr-primary-1);
+color: (--clr-primary-1);
 text-transform: capitalize;
 padding: 0.25rem 0.5rem;
 border-top-left-radius: 1rem;
@@ -458,7 +458,7 @@ border-top-left-radius: 1rem;
 
 @media screen and (min-width:1170px){
   .tour-card{
-    flex: 0 0 calc(33.333% - 4rem);
+    flex: 0 0 calc(33.333% - 2rem);
   }
 }
 /*
