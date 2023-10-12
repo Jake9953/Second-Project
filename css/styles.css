@@ -391,15 +391,18 @@ Services
   box-shadow: var(--clr-primary-1);
   transform: scale(1.02);
 }
+
 .tour-img-container {
   position: relative;
 }
+
 .tour-img {
   height: 15rem;
   object-fit: cover;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
 }
+
 .tour-date {
   position: absolute;
   right: 0;
@@ -411,6 +414,7 @@ Services
   padding: 0.25rem 0.5rem;
   border-top-left-radius: 1rem;
 }
+
 .tour-info {
   padding: 1.25rem 1.5rem;
 }
@@ -421,26 +425,31 @@ Services
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .tour-title p,
 .tour-title h4 {
   margin-bottom: 0.75rem;
   line-height: 1.25;
 }
+
 .tour-title p {
   color: rgb(111, 0, 255);
 }
+
 .tour-footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .tour-footer p {
   line-height: 0;
   margin-bottom: 0;
   text-transform: capitalize;
   color: var(--clr-primary-5);
 }
+
 .tour-btn {
   text-align: center;
 }
@@ -451,6 +460,7 @@ Services
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .tour-card {
     flex: 0 0 calc(50% - 2rem);
   }
@@ -461,6 +471,7 @@ Services
     flex: 0 0 calc(33.333% - 2rem);
   }
 }
+
 /*
 ===============Contact===============
 */
@@ -469,6 +480,7 @@ Services
   padding: 2rem;
   align-content: center;
 }
+
 .contact-title p {
   color: rgba(247, 0, 255, 0.938);
   font-size: larger;
@@ -491,9 +503,11 @@ Services
   text-transform: capitalize;
   border: transparent;
 }
+
 .form-control::placeholder {
   color: inherit;
 }
+
 .btn-submit {
   font-family: var(--ff-primary);
   margin-left: 0.5rem;
@@ -502,6 +516,7 @@ Services
   cursor: pointer;
   transition: var(--transition);
 }
+
 .btn-submit:hover {
   background: var(--clr-primary-1);
   color: var(--clr-primary-5);
@@ -513,6 +528,7 @@ Services
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .contact-form {
     align-self: flex-start;
     flex: 1 1 auto;
@@ -525,6 +541,55 @@ Services
 ===============
 Gallery
 ===============*/
+.gallery-img-container {
+  position: relative;
+  background: var(--clr-primary-3);
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: lightcoral;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gallery-img {
+  height: 17rem;
+  object-fit: cover;
+  transition: var(--transition);
+
+}
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.2;
+}
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+
+@media screen and (min-width:768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-img-container {
+    flex: 0 0 50%
+  }
+}
+
+@media screen and (min-width:992px) {
+  .gallery-img-container {
+    flex: 0 0 25%
+  }
+}
+
 /*
 =============== 
 Footer
