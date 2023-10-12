@@ -74,15 +74,10 @@ a {
   text-decoration: none;
 }
 
-img {
+img:not(.nav-logo) {
   width: 100%;
   display: block;
 }
-
-/* img:not(.nav-logo) {
-  width: 100%;
-  display: block;
-} */
 
 h1,
 h2,
@@ -200,6 +195,118 @@ p {
 Navbar
 ===============
 */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  z-index: 2;
+}
+
+.nav-icons {
+  display: none;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  transform: scale(1.2);
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: var(--clr-grey-1);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: var(--clr-grey-1);
+  background: lightskyblue;
+  padding-left: 3rem;
+  border-radius: 4px;
+}
+
+/* 280 */
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 280px;
+}
+
+@media screen and (min-width: 992px) {
+  /*hide toggle button*/
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+  .nav-link {
+    padding: 0 0;
+    margin-right: 0.7rem;
+  }
+  .nav-link:hover {
+    padding: 0;
+    color: var(--clr-primary-5);
+    background: transparent;
+  }
+  .nav-icons {
+    display: flex;
+  }
+  .nav-icon {
+    margin-right: 0.7rem;
+    color: var(--clr-primary-5);
+    font-size: 1.2rem;
+    transition: var(--transition);
+  }
+  .nav-icon:hover {
+    color: rgb(98, 0, 255);
+  }
+}
+
 /*
 =============== 
 Hero
@@ -256,10 +363,9 @@ Hero
 }
 
 /*
-=============== 
-About
 ===============
-*/
+About
+===============*/
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
@@ -305,9 +411,7 @@ About
 }
 
 /* =============== 
-Services
-=============== 
-*/
+Services===============*/
 .services {
   background: var(--clr-grey-10);
 }
@@ -473,8 +577,7 @@ Services
 }
 
 /*
-===============Contact===============
-*/
+===============Contact===============*/
 .contact {
   background: var(--clr-primary-8);
   padding: 2rem;
@@ -539,8 +642,7 @@ Services
 
 /*
 ===============
-Gallery
-===============*/
+Gallery===============*/
 .gallery-img-container {
   position: relative;
   background: var(--clr-primary-3);
@@ -562,7 +664,6 @@ Gallery
   height: 17rem;
   object-fit: cover;
   transition: var(--transition);
-
 }
 
 .gallery-img-container:hover .gallery-img {
@@ -573,28 +674,25 @@ Gallery
   opacity: 1;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .gallery-center {
     display: flex;
     flex-wrap: wrap;
   }
 
   .gallery-img-container {
-    flex: 0 0 50%
+    flex: 0 0 50%;
   }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
   .gallery-img-container {
-    flex: 0 0 25%
+    flex: 0 0 25%;
   }
 }
 
 /*
-=============== 
-Footer
-===============
-*/
+===============Footer===============*/
 .footer {
   background: var(--clr-grey-1);
   text-align: center;
@@ -602,7 +700,8 @@ Footer
   padding-right: 2rem;
 }
 
-.footer-link, .footer-icons {
+.footer-link,
+.footer-icons {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
@@ -627,7 +726,6 @@ Footer
   margin-right: 1rem;
   color: var(--clr-primary-8);
   transition: var(--transition);
-
 }
 
 .footer-icon {
@@ -635,7 +733,7 @@ Footer
 }
 
 .footer-icon:hover {
-  color: aquamarine
+  color: aquamarine;
 }
 
 .copyright {
