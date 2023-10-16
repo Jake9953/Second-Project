@@ -27,5 +27,6 @@
     "soluta",
     "tuors",
     "voluptas"
-  ]
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
