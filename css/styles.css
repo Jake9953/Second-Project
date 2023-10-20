@@ -502,7 +502,8 @@ Services===============*/
 
 .tour-img {
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+    object-fit: cover;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
 }
@@ -607,6 +608,21 @@ Services===============*/
   border: transparent;
 }
 
+.form-control::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.form-control::-moz-placeholder {
+  color: inherit;
+}
+
+.form-control:-ms-input-placeholder {
+  color: inherit;
+}
+
+.form-control::-ms-input-placeholder {
+  color: inherit;
+}
 .form-control::placeholder {
   color: inherit;
 }
@@ -662,7 +678,8 @@ Gallery===============*/
 
 .gallery-img {
   height: 17rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+    object-fit: cover;
   transition: var(--transition);
 }
 
