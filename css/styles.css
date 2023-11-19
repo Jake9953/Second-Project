@@ -110,7 +110,35 @@ p {
   color: var(--clr-grey-5);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 1199px) {
   h1 {
     font-size: 4rem;
   }
@@ -264,7 +292,7 @@ Navbar
   height: 280px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 480px) {
   /*hide toggle button*/
   .navbar {
     padding: 1rem 2rem;
@@ -374,7 +402,7 @@ About
   margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 480px) {
   .about-center {
     display: flex;
     justify-content: space-between;
@@ -389,7 +417,7 @@ About
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1199px) {
   .about-img::before {
     content: "";
     position: absolute;
@@ -436,7 +464,7 @@ Services===============*/
   margin-right: auto;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 480px) {
   .services-center {
     display: flex;
     justify-content: space-between;
@@ -456,7 +484,7 @@ Services===============*/
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1199px) {
   .service {
     display: flex;
     text-align: left;
@@ -559,7 +587,7 @@ Services===============*/
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .featured-center {
     display: flex;
     flex-wrap: wrap;
@@ -571,7 +599,7 @@ Services===============*/
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1199px) {
   .tour-card {
     flex: 0 0 calc(33.333% - 2rem);
   }
@@ -641,7 +669,7 @@ Services===============*/
   color: var(--clr-primary-5);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 480px) {
   .contact-center {
     display: flex;
     flex-wrap: wrap;
@@ -691,7 +719,7 @@ Gallery===============*/
   opacity: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .gallery-center {
     display: flex;
     flex-wrap: wrap;
@@ -702,7 +730,7 @@ Gallery===============*/
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199) {
   .gallery-img-container {
     flex: 0 0 25%;
   }
